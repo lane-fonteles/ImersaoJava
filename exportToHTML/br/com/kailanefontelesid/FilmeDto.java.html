@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>FilmeDto.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+FilmeDto.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">br.com.kailanefontelesid</span><span class="s0">;</span>
+
+
+<span class="s0">import </span><span class="s1">java.util.Objects</span><span class="s0">;</span>
+
+<span class="s0">public class </span><span class="s1">FilmeDto {</span>
+
+    <span class="s0">private </span><span class="s1">String nome</span><span class="s0">;</span>
+    <span class="s0">private </span><span class="s1">String genero</span><span class="s0">;</span>
+    <span class="s0">private </span><span class="s1">String estudio</span><span class="s0">;</span>
+    <span class="s0">private int </span><span class="s1">percentualAudiencia</span><span class="s0">;</span>
+
+    <span class="s0">public </span><span class="s1">String getNome() {</span>
+        <span class="s0">return this</span><span class="s1">.nome</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setNome(String nome) {</span>
+        <span class="s0">this</span><span class="s1">.nome = nome</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">String getGenero() {</span>
+        <span class="s0">return </span><span class="s1">genero</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setGenero(String genero) {</span>
+        <span class="s0">this</span><span class="s1">.genero = genero</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">String getEstudio() {</span>
+        <span class="s0">return </span><span class="s1">estudio</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setEstudio(String estudio) {</span>
+        <span class="s0">this</span><span class="s1">.estudio = estudio</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public int </span><span class="s1">getPercentualAudiencia() {</span>
+        <span class="s0">return </span><span class="s1">percentualAudiencia</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setPercentualAudiencia(</span><span class="s0">int </span><span class="s1">percentualAudiencia) {</span>
+        <span class="s0">this</span><span class="s1">.percentualAudiencia = percentualAudiencia</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public double </span><span class="s1">getLucrativade() {</span>
+        <span class="s0">return </span><span class="s1">lucrativade</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setLucrativade(</span><span class="s0">double </span><span class="s1">lucrativade) {</span>
+        <span class="s0">this</span><span class="s1">.lucrativade = lucrativade</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public int </span><span class="s1">getAprovacaoPremio() {</span>
+        <span class="s0">return </span><span class="s1">aprovacaoPremio</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setAprovacaoPremio(</span><span class="s0">int </span><span class="s1">aprovacaoPremio) {</span>
+        <span class="s0">this</span><span class="s1">.aprovacaoPremio = aprovacaoPremio</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">String getFaturamento() {</span>
+        <span class="s0">return </span><span class="s1">faturamento</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setFaturamento(String faturamento) {</span>
+        <span class="s0">this</span><span class="s1">.faturamento = faturamento</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public int </span><span class="s1">getAnoLancamento() {</span>
+        <span class="s0">return </span><span class="s1">anoLancamento</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setAnoLancamento(</span><span class="s0">int </span><span class="s1">anoLancamento) {</span>
+        <span class="s0">this</span><span class="s1">.anoLancamento = anoLancamento</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">private double </span><span class="s1">lucrativade</span><span class="s0">;</span>
+    <span class="s0">private int </span><span class="s1">aprovacaoPremio</span><span class="s0">;</span>
+    <span class="s0">private </span><span class="s1">String faturamento</span><span class="s0">;</span>
+    <span class="s0">private int </span><span class="s1">anoLancamento</span><span class="s0">;</span>
+
+    <span class="s1">@Override</span>
+    <span class="s0">public boolean </span><span class="s1">equals(Object o) {</span>
+        <span class="s0">if </span><span class="s1">(</span><span class="s0">this </span><span class="s1">== o) </span><span class="s0">return true;</span>
+        <span class="s0">if </span><span class="s1">(o == </span><span class="s0">null </span><span class="s1">|| getClass() != o.getClass()) </span><span class="s0">return false;</span>
+        <span class="s1">FilmeDto filmeDto = (FilmeDto) o</span><span class="s0">;</span>
+        <span class="s0">return </span><span class="s1">nome.equals(filmeDto.nome) &amp;&amp; estudio.equals(filmeDto.estudio)</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">@Override</span>
+    <span class="s0">public int </span><span class="s1">hashCode() {</span>
+        <span class="s0">return </span><span class="s1">Objects.hash(nome</span><span class="s0">, </span><span class="s1">estudio)</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">@Override</span>
+    <span class="s0">public </span><span class="s1">String toString() {</span>
+        <span class="s0">return </span><span class="s2">&quot;FilmeDto{&quot; </span><span class="s1">+</span>
+                <span class="s2">&quot;nome='&quot; </span><span class="s1">+ nome + </span><span class="s2">'</span><span class="s0">\'</span><span class="s2">' </span><span class="s1">+</span>
+                <span class="s2">&quot;, genero='&quot; </span><span class="s1">+ genero + </span><span class="s2">'</span><span class="s0">\'</span><span class="s2">' </span><span class="s1">+</span>
+                <span class="s2">&quot;, estudio='&quot; </span><span class="s1">+ estudio + </span><span class="s2">'</span><span class="s0">\'</span><span class="s2">' </span><span class="s1">+</span>
+                <span class="s2">&quot;, percentualAudiencia=&quot; </span><span class="s1">+ percentualAudiencia +</span>
+                <span class="s2">&quot;, lucrativade=&quot; </span><span class="s1">+ lucrativade +</span>
+                <span class="s2">&quot;, aprovacaoPremio=&quot; </span><span class="s1">+ aprovacaoPremio +</span>
+                <span class="s2">&quot;, faturamento='&quot; </span><span class="s1">+ faturamento + </span><span class="s2">'</span><span class="s0">\'</span><span class="s2">' </span><span class="s1">+</span>
+                <span class="s2">&quot;, anoLancamento=&quot; </span><span class="s1">+ anoLancamento +</span>
+                <span class="s2">'}'</span><span class="s0">;</span>
+    <span class="s1">}</span>
+<span class="s1">}</span>
+</pre>
+</body>
+</html>
